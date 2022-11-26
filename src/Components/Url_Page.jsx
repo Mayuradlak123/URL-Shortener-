@@ -9,6 +9,8 @@ export default function Url_Page() {
         myPaste='';
         navigator.clipboard.readText().then((text)=>{
                setPaste(text)
+        }).catch((error)=>{
+          console.log("Somthing Went Wrong Please check and Verify");
         })
         })
     }
